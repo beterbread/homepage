@@ -110,7 +110,7 @@ a {
 	grid-column: 1 / -1;
 	font-size: 40px;
     padding-bottom: 10px;
-    border-bottom: 1px dotted #000;
+    border-bottom: 1px solid black;
 }
 
 .project {
