@@ -58,7 +58,7 @@ a {
 	align-items: center;
 	padding: 50px 50px;
 	background-color: #4c758c;
-	background-image: -webkit-linear-gradient(-70deg, #4c758c 50%, white 50%);
+	background-image: -webkit-linear-gradient(-80deg, #4c758c 50%, white 50%);
 }
 
 .about > img {
@@ -100,17 +100,52 @@ a {
 
 .work {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	column-gap: 15px;
+	row-gap: 15px;
+	padding: 10px 40px;
 }
 
 .work h1 {
-	grid-column: 1 / 4;
+	grid-column: 1 / -1;
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+.project {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .screenshot {
 	background-color: red;
-	width: 200px;
+	width: 100%;
 	height: 100px;
+}
+
+.project h2 {
+	font-size: 16px;
+}
+
+.nameLinkRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.project p {
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.nameLinkRow, .project p {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.projectLink > :first-child {
+	padding-right: 5px;
 }
 
 .project svg {
@@ -119,6 +154,12 @@ a {
 }
 
 /* Contact me */
+
+.contact {
+	background-color: #4c758c;
+	margin-top: 50px;
+	padding: 10px 40px;
+}
 
 .phone svg, .email svg {
 	width: 15px;
