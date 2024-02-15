@@ -1,3 +1,3 @@
 # homepage
-Homepage made with HTML, C SS, and JS  
+Homepage made with HTML and CSS
 [Live demo](https://beterbread.github.io/homepage/)
