@@ -108,7 +108,9 @@ a {
 
 .work h1 {
 	grid-column: 1 / -1;
-	font-size: 36px;
+	font-size: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #000;
 }
 
 .project {
@@ -230,6 +232,7 @@ a {
 
 	.work h1 {
 		padding-bottom: 10px;
+        border-bottom: none;
 	}
 
 	.project {
@@ -273,6 +276,7 @@ a {
 
 	.work h1 {
 		padding-bottom: 10px;
+        border-bottom: none;
 	}
 	
 	.about {
@@ -286,7 +290,7 @@ a {
 	}
 }
 
-.social a, .contactSocial a {
+.social a {
 	display: inline-block;
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
@@ -296,7 +300,6 @@ a {
 	-webkit-transition-property: transform;
 	transition-property: transform;
   }
-  .social a:hover, .social a:focus, .social a:active, .contactSocial a:hover, .contactSocial a:focus, .contactSocial a:active{
-	-webkit-transform: scale(1.1);
+  .social a:hover, .social a:focus, .social a:active {
 	transform: scale(1.1);
   }
