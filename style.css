@@ -158,10 +158,44 @@ a {
 .contact {
 	background-color: #4c758c;
 	margin-top: 50px;
-	padding: 10px 40px;
+	padding: 40px;
+	color: white;
+}
+
+.contact h1 {
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+.contact > p {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.phone, .email {
+	display: flex;
+	font-size: 16px;
+	padding-bottom: 10px;
 }
 
 .phone svg, .email svg {
 	width: 15px;
 	height: auto;
+	margin-right: 7px;
+}
+
+.contactSocial svg {
+	width: 20px;
+	height: auto;
+}
+
+.contactSocial > :first-child {
+	margin-right: 7px;
+}
+
+/* Left and right margin master */
+
+.about, .work, .contact {
+	padding-left: 200px;
+	padding-right: 200px;
 }
