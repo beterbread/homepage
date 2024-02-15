@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,6 +54,10 @@ a {
 	text-decoration: none;
 }
 
+body {
+	font-family: "Roboto", sans-serif;
+}
+
 /* About section */
 
 .about {
@@ -74,6 +81,7 @@ a {
 }
 
 .about h1 {
+	font-family: "Playfair Display", serif;
 	font-size: 48px;
 	padding-bottom: 10px;
 }
@@ -107,10 +115,11 @@ a {
 }
 
 .work h1 {
+	font-family: "Playfair Display", serif;
 	grid-column: 1 / -1;
 	font-size: 40px;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px dotted #000;
 }
 
 .project {
@@ -124,6 +133,7 @@ a {
 }
 
 .project h2 {
+	font-family: "Playfair Display", serif;
 	font-size: 20px;
 }
 
@@ -204,9 +214,25 @@ a {
 
 /* Left and right margin master */
 
-.about, .work, .contact {
+.about, .work, .contact, .resume {
 	padding-left: 200px;
 	padding-right: 200px;
+}
+
+/* Resume */
+.resume h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 40px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #000;
+}
+
+
+embed {
+	padding-top: 15px;
+	width: 100%;
+	height: 500px;
 }
 
 /* Mobile responsive design */
@@ -244,7 +270,7 @@ a {
 		padding-right: 5%;
 	}
 
-	.work, .contact {
+	.work, .contact, .resume {
 		padding-left: calc(5% + 20px);
 		padding-right: calc(5% + 20px);
 	}
@@ -284,7 +310,7 @@ a {
 		padding-right: 5%;
 	}
 
-	.work, .contact {
+	.work, .contact, .resume {
 		padding-left: calc(5% + 20px);
 		padding-right: calc(5% + 20px);
 	}
