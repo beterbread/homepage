@@ -109,7 +109,6 @@ a {
 .work h1 {
 	grid-column: 1 / -1;
 	font-size: 36px;
-	/* padding-bottom: 10px; */
 }
 
 .project {
@@ -208,12 +207,11 @@ a {
 @media (max-width: 767px) {
 	.about {
 		display: block;
-		padding: 0;
-		padding-top: 20px;
-		padding-right: 20px;
+		padding: 20px 20px;
 	}
 	
 	.about > img {
+		display: block;
 		object-fit: cover;
 		width: 100%;
 		height: 300px;
@@ -223,8 +221,65 @@ a {
 		float: none;
 	}
 
-	.about, .work, .contact {
+	.work {
+		display: block;
+	}
+
+	.work h1 {
+		padding-bottom: 10px;
+	}
+
+	.project {
+		margin-bottom: 15px;
+	}
+	
+	.about {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+
+	.work, .contact {
+		padding-left: calc(5% + 20px);
+		padding-right: calc(5% + 20px);
+	}
+}
+
+/* Tablet responsive design */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.about {
+		display: block;
+		padding: 20px 20px;
+	}
+	
+	.about > img {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		height: 400px;
+	}	
+
+	.social {
+		float: none;
+	}
+
+	.work {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		column-gap: 15px;
+		row-gap: 15px;
+	}
+
+	.work h1 {
+		padding-bottom: 10px;
+	}
+	
+	.about {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.work, .contact {
+		padding-left: calc(5% + 20px);
+		padding-right: calc(5% + 20px);
 	}
 }
