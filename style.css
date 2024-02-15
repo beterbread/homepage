@@ -67,3 +67,32 @@ table {
     width: 25px;
     height: auto;
 }
+
+/* My work */
+
+.work {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.work h1 {
+	grid-column: 1 / 4;
+}
+
+.screenshot {
+	background-color: red;
+	width: 200px;
+	height: 100px;
+}
+
+.project svg {
+	width: 20px;
+	height: auto;
+}
+
+/* Contact me */
+
+.phone svg, .email svg {
+	width: 15px;
+	height: auto;
+}
