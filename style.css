@@ -63,23 +63,23 @@ a {
 
 .about > img {
     object-fit: cover;
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
 }
 
 .about > div {
-	padding: 10px 20px 10px 10px;
+	padding: 20px;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 	background-color: aliceblue;
 }
 
 .about h1 {
-	font-size: 32px;
+	font-size: 48px;
 	padding-bottom: 10px;
 }
 
 .about p {
-	font-size: 12px;
+	font-size: 20px;
 	padding-bottom: 10px;
 }
 
@@ -92,7 +92,7 @@ a {
 }
 
 .social img {
-    width: 20px;
+    width: 35px;
     height: auto;
 }
 
@@ -108,8 +108,8 @@ a {
 
 .work h1 {
 	grid-column: 1 / -1;
-	font-size: 24px;
-	padding-bottom: 10px;
+	font-size: 36px;
+	/* padding-bottom: 10px; */
 }
 
 .project {
@@ -119,11 +119,11 @@ a {
 .screenshot {
 	background-color: red;
 	width: 100%;
-	height: 100px;
+	height: 200px;
 }
 
 .project h2 {
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .nameLinkRow {
@@ -135,8 +135,8 @@ a {
 }
 
 .project p {
-	font-size: 12px;
-	padding-bottom: 5px;
+	font-size: 16px;
+	padding-bottom: 7px;
 }
 
 .nameLinkRow, .project p {
@@ -145,7 +145,7 @@ a {
 }
 
 .projectLink > :first-child {
-	padding-right: 5px;
+	padding-right: 1px;
 }
 
 .project svg {
@@ -163,13 +163,13 @@ a {
 }
 
 .contact h1 {
-	font-size: 24px;
+	font-size: 36px;
 	padding-bottom: 10px;
 }
 
 .contact > p {
-	font-size: 18px;
-	padding-bottom: 10px;
+	font-size: 20px;
+	padding-bottom: 15px;
 }
 
 .phone, .email {
@@ -178,8 +178,12 @@ a {
 	padding-bottom: 10px;
 }
 
+.email {
+	padding-bottom: 15px;
+}
+
 .phone svg, .email svg {
-	width: 15px;
+	width: 20px;
 	height: auto;
 	margin-right: 7px;
 }
@@ -190,7 +194,7 @@ a {
 }
 
 .contactSocial > :first-child {
-	margin-right: 7px;
+	margin-right: 4px;
 }
 
 /* Left and right margin master */
@@ -198,4 +202,29 @@ a {
 .about, .work, .contact {
 	padding-left: 200px;
 	padding-right: 200px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 767px) {
+	.about {
+		display: block;
+		padding: 0;
+		padding-top: 20px;
+		padding-right: 20px;
+	}
+	
+	.about > img {
+		object-fit: cover;
+		width: 100%;
+		height: 300px;
+	}	
+
+	.social {
+		float: none;
+	}
+
+	.about, .work, .contact {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 }
