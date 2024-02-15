@@ -47,24 +47,52 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* About section */
 
 .about {
     display: flex;
+	align-items: center;
+	padding: 50px 50px;
+	background-color: #4c758c;
+	background-image: -webkit-linear-gradient(-70deg, #4c758c 50%, white 50%);
 }
 
-.portfolio > img {
+.about > img {
     object-fit: cover;
-    width: 200px;
-    height: auto;
+    width: 250px;
+    height: 250px;
 }
 
-.portfolio > h2 {
-    text-align: center;
+.about > div {
+	padding: 10px 20px 10px 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	background-color: aliceblue;
 }
 
-.social svg {
-    width: 25px;
+.about h1 {
+	font-size: 32px;
+	padding-bottom: 10px;
+}
+
+.about p {
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+.social {
+	float: right;
+}
+
+.social > :first-child {
+	padding-right: 5px;
+}
+
+.social img {
+    width: 20px;
     height: auto;
 }
 
